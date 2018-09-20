@@ -108,7 +108,7 @@ public class ViewDashBoard extends Pane {
 
 			@Override
 			public void handle(Event arg0) {
-				webView.getEngine().executeScript("document.forms['form'].submit()");
+				webView.getEngine().executeScript("$('#form').submit()");
 				hBoxCuerpo.setVisible(true);
 				
 				registro=capturarDatosRegistraduria("");
